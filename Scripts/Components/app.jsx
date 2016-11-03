@@ -77,7 +77,7 @@ var Home = React.createClass({
         return (
           <div id="home" className="card card-inverse">
             <div className="card-block text-xs-right">
-            <img className="card-image img-fluid rounded float-md-left" src="./Content/bio.jpg" />
+            <img className="card-image img-fluid rounded float-md-left" src="/Content/Images/bio.jpg" />
             <h3 className="card-title display-1">JSharp.Co</h3>
            <p className="card-text">As knowledgeable as I am punny.</p>
             </div>
@@ -93,15 +93,15 @@ var About = React.createClass({
             <div className="card-block">
             <h3 className="card-title">A bit about me</h3>
            <p className="text-white">
-             I code stuff. Usually using technology like:
+               I code stuff. Usually using technology like:
             <ul>
                 <li>HTML</li>
                 <li>CSS3</li>
                 <li>Javascript</li>
                 <li>ASP.NET (MVC / Web API)</li>
             </ul>
-            My primary background has been in website and application development, though
-            <br/>Powershell Scripting has also been a passion of mine.
+               My primary background has been in website and application development, though
+            <br />Powershell Scripting has also been a passion of mine.
            </p>
             </div>
             </div>);
@@ -113,42 +113,47 @@ var Portfolio = React.createClass({
         return (  <div id="portfolio" className="card card-inverse">
             <div className="card-block">
             <h3 className="card-title">Special title treatment</h3>
-           <p className="card-text">A few examples of stuff I've done</p>
+           <p className="card-text">
+               A few examples of stuff I've done. Note that this site has been written using React as the Primary
+               Javascript Framework, with Bootstrap 4 used in styling, with SCSS as a preprocessor. The links below 
+               lead to my CodePen Projects, while code for this site and some of my other work (Powershell, ASP.NET MVC)
+               can be found at my Github page.
+           </p>
                 <h4 className="display-4 text-white text-md-center">Examples</h4>
               <div className="row">
                 <div className="col-xs-4">
-                  <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/YWLAkb/image/small.png" />
+                  <a href="https://codepen.io/oknoblich/pen/YWLAkb">
+                    <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/YWLAkb/image/small.png" />
+                  </a>
                 </div>
                 <div className="col-xs-4">
-                  <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/zKZVoE/image/small.png" />
+                    <a href="https://codepen.io/oknoblich/pen/zKZVoE">
+                        <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/zKZVoE/image/small.png" />
+                    </a>
                 </div>
                 <div className="col-xs-4">
-                  <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/wWXzpN/image/small.png" />
+                    <a href="https://codepen.io/oknoblich/pen/wWXzpN/">
+                        <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/wWXzpN/image/small.png" />
+                    </a>
                 </div>
               </div>
                <div className="row">
                 <div className="col-xs-4">
-                  <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/JKLpyz/image/small.png" />
+                    <a href="https://codepen.io/oknoblich/pen/JKLpyz/">
+                        <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/JKLpyz/image/small.png" />
+                    </a>
                 </div>
                 <div className="col-xs-4">
-                  <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/zrqqvw/image/small.png" />
+                    <a href="https://codepen.io/oknoblich/pen/zrqqvw/">
+                        <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/zrqqvw/image/small.png" />
+                    </a>
                 </div>
                 <div className="col-xs-4">
-                  <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/WwOxrV/image/small.png" />
+                    <a href="https://codepen.io/oknoblich/pen/WwOxrV">
+                       <img className="img-thumbnail rounded mx-auto" src="https://codepen.io/oknoblich/pen/WwOxrV/image/small.png" />
+                    </a>
                 </div>
                </div>
-                <h4 className="display-4 text-white text-md-center">Backend Work</h4>
-                <div className="row">
-                    <div className="col-xs-4">
-
-                    </div>
-                    <div className="col-xs-4">
-
-                    </div>
-                    <div className="col-xs-4">
-
-                    </div>
-                </div>
             </div>
         </div>);
     }
@@ -174,14 +179,17 @@ var Contact = React.createClass({
             <h3 className="card-title">Contact Me!</h3>
            <p className="card-text">Might be a contact form... eventually</p>
               <div className="row">
-                <div className="col-xs-6">
+                <div className="col-xs-2">
                   <a className="btn btn-primary" target='_blank' href="https://www.linkedin.com/in/jacob-johnson-412019a7">
                       LinkedIn
                   </a>
                 </div>
-                 <div className="col-xs-6">
-                     <Game />
-                 </div>
+                <div className="col-xs-2">
+                    <a className="btn btn-secondary" href="https://github.com/jajoh143">Github</a>
+                </div>
+                <div className="col-xs-2">
+                    <a className="btn btn-info" href="mailto:jajoh143@gmail.com">Email Me</a>
+                </div>
               </div>
             </div>
         </div>);

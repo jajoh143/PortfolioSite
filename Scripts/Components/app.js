@@ -103,7 +103,7 @@ var Home = React.createClass({
             React.createElement(
                 "div",
                 { className: "card-block text-xs-right" },
-                React.createElement("img", { className: "card-image img-fluid rounded float-md-left", src: "./Content/bio.jpg" }),
+                React.createElement("img", { className: "card-image img-fluid rounded float-md-left", src: "/Content/Images/bio.jpg" }),
                 React.createElement(
                     "h3",
                     { className: "card-title display-1" },
@@ -189,7 +189,7 @@ var Portfolio = React.createClass({
                 React.createElement(
                     "p",
                     { className: "card-text" },
-                    "A few examples of stuff I've done"
+                    "A few examples of stuff I've done. Note that this site has been written using React as the Primary Javascript Framework, with Bootstrap 4 used in styling, with SCSS as a preprocessor. The links below lead to my CodePen Projects, while code for this site and some of my other work (Powershell, ASP.NET MVC) can be found at my Github page."
                 ),
                 React.createElement(
                     "h4",
@@ -202,17 +202,29 @@ var Portfolio = React.createClass({
                     React.createElement(
                         "div",
                         { className: "col-xs-4" },
-                        React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/YWLAkb/image/small.png" })
+                        React.createElement(
+                            "a",
+                            { href: "https://codepen.io/oknoblich/pen/YWLAkb" },
+                            React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/YWLAkb/image/small.png" })
+                        )
                     ),
                     React.createElement(
                         "div",
                         { className: "col-xs-4" },
-                        React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/zKZVoE/image/small.png" })
+                        React.createElement(
+                            "a",
+                            { href: "https://codepen.io/oknoblich/pen/zKZVoE" },
+                            React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/zKZVoE/image/small.png" })
+                        )
                     ),
                     React.createElement(
                         "div",
                         { className: "col-xs-4" },
-                        React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/wWXzpN/image/small.png" })
+                        React.createElement(
+                            "a",
+                            { href: "https://codepen.io/oknoblich/pen/wWXzpN/" },
+                            React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/wWXzpN/image/small.png" })
+                        )
                     )
                 ),
                 React.createElement(
@@ -221,30 +233,30 @@ var Portfolio = React.createClass({
                     React.createElement(
                         "div",
                         { className: "col-xs-4" },
-                        React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/JKLpyz/image/small.png" })
+                        React.createElement(
+                            "a",
+                            { href: "https://codepen.io/oknoblich/pen/JKLpyz/" },
+                            React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/JKLpyz/image/small.png" })
+                        )
                     ),
                     React.createElement(
                         "div",
                         { className: "col-xs-4" },
-                        React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/zrqqvw/image/small.png" })
+                        React.createElement(
+                            "a",
+                            { href: "https://codepen.io/oknoblich/pen/zrqqvw/" },
+                            React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/zrqqvw/image/small.png" })
+                        )
                     ),
                     React.createElement(
                         "div",
                         { className: "col-xs-4" },
-                        React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/WwOxrV/image/small.png" })
+                        React.createElement(
+                            "a",
+                            { href: "https://codepen.io/oknoblich/pen/WwOxrV" },
+                            React.createElement("img", { className: "img-thumbnail rounded mx-auto", src: "https://codepen.io/oknoblich/pen/WwOxrV/image/small.png" })
+                        )
                     )
-                ),
-                React.createElement(
-                    "h4",
-                    { className: "display-4 text-white text-md-center" },
-                    "Backend Work"
-                ),
-                React.createElement(
-                    "div",
-                    { className: "row" },
-                    React.createElement("div", { className: "col-xs-4" }),
-                    React.createElement("div", { className: "col-xs-4" }),
-                    React.createElement("div", { className: "col-xs-4" })
                 )
             )
         );
@@ -291,7 +303,7 @@ var Contact = React.createClass({
                     { className: "row" },
                     React.createElement(
                         "div",
-                        { className: "col-xs-6" },
+                        { className: "col-xs-2" },
                         React.createElement(
                             "a",
                             { className: "btn btn-primary", target: "_blank", href: "https://www.linkedin.com/in/jacob-johnson-412019a7" },
@@ -300,8 +312,21 @@ var Contact = React.createClass({
                     ),
                     React.createElement(
                         "div",
-                        { className: "col-xs-6" },
-                        React.createElement(Game, null)
+                        { className: "col-xs-2" },
+                        React.createElement(
+                            "a",
+                            { className: "btn btn-secondary", href: "https://github.com/jajoh143" },
+                            "Github"
+                        )
+                    ),
+                    React.createElement(
+                        "div",
+                        { className: "col-xs-2" },
+                        React.createElement(
+                            "a",
+                            { className: "btn btn-info", href: "mailto:jajoh143@gmail.com" },
+                            "Email Me"
+                        )
                     )
                 )
             )

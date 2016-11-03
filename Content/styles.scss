@@ -31,7 +31,8 @@
   
 body 
 {
-    background-color: #255E69;
+    background: url("Images/city.jpg") center center fixed no-repeat no-repeat;
+    background-size: cover;  
 }
  
 body-container 
@@ -103,4 +104,13 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+ul {
+    li {
+        color: white;
+    }
+}
+span {
+    color: white;
 }
